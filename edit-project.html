@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Project</title>
+    <link rel="stylesheet" href="edit-project.css">
+</head>
+
+<body>
+    <!-- حاوية تحتوي على محتوى الصفحة الخاصة بتعديل المشروع -->
+    <div class="container">
+        <!-- عنوان الصفحة الخاصة بتعديل المشروع -->
+        <h1>Edit Project</h1>
+
+        <!-- نموذج لتعديل بيانات المشروع -->
+        <form id="editForm">
+            <!-- حقل لإدخال ID المشروع المراد تعديله -->
+            <label for="id">Project ID:</label>
+            <input type="number" id="id" placeholder="Enter Project ID" required>
+        
+            <!-- حقل لتعديل وصف المشروع -->
+            <label for="location">Change Description:</label>
+            <input type="text" id="location" placeholder="Enter new location">
+        
+            <!-- حقل لتعديل ساعات العمل للمشروع -->
+            <label for="hours">Change Working Hours:</label>
+            <input type="number" id="hours" placeholder="Enter new working hours">
+        
+            <!-- زر لحفظ التعديلات -->
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+
+    <!-- ربط السكربت الخاص بتعديل المشروع -->
+    <script src="edit-project.js"></script>
+</body>
+
+
+</html>

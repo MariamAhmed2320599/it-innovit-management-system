@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="edit-employees.css">
+</head>
+
+<body>
+    <!-- حاوية تحتوي على محتوى الصفحة الخاصة بتعديل الموظف -->
+    <div class="container">
+        <!-- عنوان الصفحة الخاصة بتعديل الموظف -->
+        <h1>Edit Employee</h1>
+
+        <!-- نموذج لتعديل بيانات الموظف -->
+        <form action="edit-employee-action.html" method="GET">
+            <!-- حقل لإدخال ID الموظف المراد تعديله -->
+            <label for="employeeId">Enter Employee ID:</label>
+            <input type="text" id="employeeId" name="employeeId" required>
+            
+            <!-- حقل لتعديل الراتب الجديد للموظف -->
+            <label for="salary">New Salary:</label>
+            <input type="text" id="salary" name="salary">
+            
+            <!-- حقل لتعديل حالة الأداء للموظف -->
+            <label for="performance">Performance Status:</label>
+            <input type="text" id="performance" name="performance">
+            
+            <!-- زر لحفظ التعديلات -->
+            <button type="submit">Save Changes</button>
+
+            <!-- تم تعليق الكود التالي وهو عبارة عن رابط صفحة أخرى (ممكن يضاف مستقبلاً) -->
+            <!-- <div class="next-btn">
+                <a href="ed-employee.html">prompt code</a>
+            </div> -->
+        </form>
+    </div>
+
+    <!-- ربط السكربت الخاص بتعديل الموظف -->
+    <script src="edit-employee.js"></script>
+</body>
+
+
+</html>

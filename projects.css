@@ -1,0 +1,54 @@
+/* إعدادات عامة */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #2980b9, #8e44ad); /* خلفية متدرجة من الأزرق إلى البنفسجي */
+    height: 100vh; /* تعيين ارتفاع الصفحة ليغطي كامل الشاشة */
+    font-family: Arial, sans-serif; /* تعيين نوع الخط */
+    display: flex;
+    justify-content: center; /* محاذاة المحتويات أفقيًا في المنتصف */
+    align-items: center; /* محاذاة المحتويات عموديًا في المنتصف */
+    flex-direction: column; /* جعل التوجه العام للعناصر عموديًا */
+}
+
+/* تنسيق العناوين */
+h1 {
+    text-align: center; /* محاذاة العنوان في المنتصف */
+    margin-bottom: 20px; /* إضافة مسافة أسفل العنوان */
+    color: white; /* لون النص */
+}
+
+/* تنسيق الجدول */
+table {
+    width: 80%; /* تعيين عرض الجدول ليكون 80% من الشاشة */
+    margin: 20px auto; /* إضافة مسافة حول الجدول */
+    border-collapse: collapse; /* إزالة المسافات بين الخلايا */
+    background-color: white; /* خلفية الجدول بيضاء */
+    border-radius: 10px; /* تدوير زوايا الجدول */
+    overflow: hidden; /* إخفاء أي محتوى يتجاوز الحدود */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل خفيف حول الجدول */
+}
+
+th, td {
+    border: 1px solid #dddddd; /* إضافة حدود خفيفة حول الخلايا */
+    padding: 10px; /* إضافة حشوة داخل الخلايا */
+    text-align: center; /* محاذاة النص في الخلايا للمنتصف */
+}
+
+th {
+    background-color: #f2f2f2; /* خلفية رمادية خفيفة للرؤوس */
+    color: #333; /* لون النص للرؤوس */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* تغيير لون الصفوف الزوجية إلى لون فاتح */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* تغيير لون الصف عند المرور عليه */
+}
+
+/* تمييز الصفوف الخاصة */
+.highlight {
+    background-color: #d1f7c4; /* تمييز الصفوف بلون أخضر فاتح */
+}

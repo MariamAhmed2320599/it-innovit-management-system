@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Info</title>
+  <link rel="stylesheet" href="styles-client.css"> 
+</head>
+<body>
+  <section class="admin-section">
+    <h2>Customer Contact Information</h2> <!-- عنوان القسم الخاص بمعلومات العملاء -->
+    <div id="customers-list"></div> <!-- مكان عرض بيانات العملاء -->
+  </section>
+
+  <script>
+    // عرض بيانات العملاء المخزنة
+    const customersList = document.getElementById('customers-list'); 
+    // <!-- تحديد مكان عرض البيانات -->
+    const customers = JSON.parse(localStorage.getItem('customers')) || []; 
+    // <!-- استرجاع بيانات العملاء من localStorage إذا كانت موجودة -->
+
+    if (customers.length > 0) {
+      //  <!-- لو في عملاء موجودين -->
+      customers.forEach((customer, index) => {
+        //  <!-- تكرار البيانات وعرضها لكل عميل -->
+        const customerDiv = document.createElement('div');
+        //  <!-- إنشاء عنصر جديد لكل عميل -->
+        customerDiv.innerHTML = `
+          <h3>Customer ${index + 1}</h3>
+           <!-- عنوان للعميل رقم (الترتيب) -->
+          <p><strong>Name:</strong> ${customer.name}</p> 
+          <!-- عرض اسم العميل -->
+          <p><strong>Email:</strong> ${customer.email}</p> 
+          <!-- عرض إيميل العميل -->
+          <p><strong>Phone Number:</strong> ${customer.phone}</p> 
+          <!-- عرض رقم تليفون العميل -->
+          <p><strong>Message:</strong> ${customer.message}</p> 
+          <!-- عرض رسالة العميل -->
+          <hr> <!-- خط فاصل بين بيانات كل عميل -->
+        `;
+        customersList.appendChild(customerDiv);
+        //  <!-- إضافة بيانات العميل للصفحة -->
+      });
+    } else { 
+      // <!-- لو مفيش بيانات للعملاء -->
+      customersList.innerHTML = '<p>No contact data available yet.</p>'; 
+      // <!-- عرض رسالة بتقول مفيش بيانات للعملاء -->
+    }
+  </script>
+</body>
+
+</html>

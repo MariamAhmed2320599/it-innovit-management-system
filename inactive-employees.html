@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inactive Employees</title>
+    <link rel="stylesheet" href="hours.css">
+</head>
+<body>
+    <h1>unactive Employees</h1> <!-- العنوان الرئيسي للصفحة -->
+    <table id="employeeTable" border="1"> <!-- جدول لعرض بيانات الموظفين غير النشطين -->
+        <thead>
+            <tr>
+                <th>Name</th> <!-- عمود لاسم الموظف -->
+                <th>Salary</th> <!-- عمود للراتب -->
+                <th>Performance Rate</th> <!-- عمود لمعدل الأداء -->
+                <th>Age</th> <!-- عمود للعمر -->
+                <th>Date of Birth</th> <!-- عمود لبيانات الميلاد -->
+                <th>Gender</th> <!-- عمود للجنس -->
+                <th>Skills</th> <!-- عمود للمهارات -->
+                <th>Status</th> <!-- عمود للحالة (نشط أو غير نشط) -->
+            </tr>
+        </thead>
+        <tbody id="x"></tbody> <!-- الجسم الفارغ للجدول عشان يتم إضافة البيانات ديناميكياً -->
+    </table>
+    <script src="inactive-employees.js"></script> <!-- ربط ملف الـ JavaScript لتعبئة الجدول بالبيانات -->
+</body>
+</html>

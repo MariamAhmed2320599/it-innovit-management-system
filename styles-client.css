@@ -1,0 +1,61 @@
+/* تصميم الصفحة الرئيسية */
+body {
+  font-family: Arial, sans-serif; /* تعيين الخط الأساسي للصفحة */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* خلفية الصفحة باللون الرمادي الفاتح */
+  color: #333; /* لون النصوص */
+}
+
+/* قسم صفحة المسؤول */
+.admin-section {
+  max-width: 800px; /* أقصى عرض للقسم 800px */
+  margin: 50px auto; /* توسيط القسم عموديًا وأفقيًا */
+  padding: 20px;
+  background: #fff; /* خلفية بيضاء للقسم */
+  border-radius: 10px; /* تدوير الزوايا */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول القسم */
+}
+
+/* عنوان الصفحة */
+.admin-section h2 {
+  font-size: 2rem; /* حجم الخط */
+  color: #0056b3; /* لون العنوان */
+  text-align: center; /* محاذاة العنوان في المنتصف */
+  margin-bottom: 20px; /* إضافة مسافة أسفل العنوان */
+}
+
+/* قائمة العملاء */
+#customers-list {
+  margin-top: 20px; /* إضافة مسافة أعلى القائمة */
+}
+
+/* كل عميل */
+#customers-list div {
+  padding: 15px; /* إضافة حشوة حول محتوى كل عميل */
+  margin-bottom: 15px; /* إضافة مسافة أسفل كل عميل */
+  border: 1px solid #ccc; /* إضافة حدود خفيفة حول كل عميل */
+  border-radius: 5px; /* تدوير الزوايا حول كل عميل */
+  background: #f9f9f9; /* خلفية فاتحة لكل عميل */
+}
+
+/* عنوان كل عميل */
+#customers-list h3 {
+  font-size: 1.5rem; /* حجم خط أكبر قليلاً للعنوان */
+  color: #0056b3; /* لون العنوان */
+  margin-bottom: 10px; /* إضافة مسافة أسفل العنوان */
+}
+
+/* معلومات كل عميل */
+#customers-list p {
+  font-size: 1rem; /* حجم خط عادي للمعلومات */
+  color: #555; /* لون النصوص باللون الرمادي المتوسط */
+  margin: 5px 0; /* إضافة مسافة حول النصوص */
+}
+
+/* خط يفصل بين العملاء */
+#customers-list hr {
+  border: none; /* إزالة الحدود الأصلية للـhr */
+  border-top: 1px solid #ccc; /* إضافة خط عادي فوق */
+  margin-top: 10px; /* إضافة مسافة فوق الخط */
+}

@@ -1,0 +1,148 @@
+/* استيراد الخطوط من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* إعدادات عامة لكل العناصر */
+* {
+    margin: 0; /* إزالة المسافات حول العناصر */
+    padding: 0; /* إزالة الحشو داخل العناصر */
+    box-sizing: border-box; /* عشان نحسب المسافة بشكل صحيح */
+    font-family: "Poppins", sans-serif; /* تحديد الخط المستخدم */
+}
+
+/* إعدادات للـ body لتوسيط المحتوى */
+body {
+    display: flex; /* استخدام flexbox للتوسيط */
+    justify-content: center; /* توسيط المحتوى أفقياً */
+    align-items: center; /* توسيط المحتوى عمودياً */
+    min-height: 100vh; /* التأكد إن الارتفاع يغطي الصفحة بالكامل */
+    background: linear-gradient(120deg, #2980b9, #8e44ad); /* خلفية متدرجة */
+}
+
+/* إعدادات الـ login container لتوزيع المحتوى */
+.login-container {
+    display: flex; /* ترتيب العناصر باستخدام flexbox */
+    width: 80%; /* عرض 80% من الصفحة */
+    max-width: 900px; /* أقصى عرض 900px */
+    height: 500px; /* ارتفاع ثابت */
+    background: white; /* خلفية بيضاء */
+    border-radius: 10px; /* زاوية مدورة */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    overflow: hidden; /* إخفاء أي محتوى خارج الحاوية */
+}
+
+/* إعدادات الجزء الخاص بالصورة داخل الـ login */
+.login-image {
+    flex: 1; /* الصورة تاخد نصف المساحة */
+    background: white; /* خلفية بيضاء */
+    display: flex; /* استخدام flexbox لترتيب العناصر داخل الصورة */
+    justify-content: center; /* توسيط الصورة أفقياً */
+    align-items: center; /* توسيط الصورة عمودياً */
+    padding: 20px; /* إضافة حشو حول الصورة */
+}
+
+/* إعدادات الصورة داخل الـ login */
+.login-image img {
+    max-width: 100%; /* الصورة تاخد أقصى عرض ممكن */
+    height: auto; /* الحفاظ على نسبة العرض والارتفاع */
+    border-radius: 5px; /* زاوية مدورة للصورة */
+}
+
+/* إعدادات الـ login form */
+.login-form {
+    flex: 1; /* الفورم ياخد نصف المساحة */
+    padding: 40px; /* إضافة حشو داخل الفورم */
+    display: flex; /* استخدام flexbox داخل الفورم */
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+    justify-content: center; /* توسيط المحتوى عمودياً */
+}
+
+/* إعدادات العنوان داخل الـ login form */
+.login-form h1 {
+    text-align: center; /* توسيط العنوان */
+    margin-bottom: 20px; /* إضافة مسافة تحت العنوان */
+    color: #2691d9; /* تحديد لون العنوان */
+}
+
+/* إعدادات الحقول داخل الـ form */
+form .txt_field {
+    position: relative; /* ضبط الموضع النسبي */
+    border-bottom: 2px solid #adadad; /* خط تحت الحقل */
+    margin: 30px 0; /* إضافة مسافة بين الحقول */
+}
+
+/* إعدادات حقل الإدخال داخل الـ txt_field */
+.txt_field input {
+    width: 100%; /* عرض الحقل 100% */
+    padding: 0 5px; /* حشو صغير داخل الحقل */
+    height: 40px; /* تحديد ارتفاع الحقل */
+    font-size: 16px; /* تحديد حجم الخط */
+    border: none; /* إزالة الحدود */
+    background: none; /* خلفية شفافة */
+    outline: none; /* إزالة التحديد الخارجي */
+}
+
+/* إعدادات التسمية داخل الـ txt_field */
+.txt_field label {
+    position: absolute; /* ضبط الموضع بشكل مطلق */
+    top: 50%; /* تحديد الموضع العمودي وسط الحقل */
+    left: 5px; /* تحديد الموضع الأفقي */
+    color: #adadad; /* لون النص */
+    transform: translateY(-50%); /* توسيط التسمية بشكل عمودي */
+    font-size: 16px; /* حجم الخط */
+    pointer-events: none; /* منع التفاعل مع التسمية */
+    transition: .5s; /* تأثير التغير */
+}
+
+/* تأثيرات عند التركيز على الحقل أو عند إدخال نص */
+.txt_field span::before {
+    content: ''; /* إضافة محتوى فارغ */
+    position: absolute; /* ضبط الموضع بشكل مطلق */
+    top: 40px; /* تحديد الموقع */
+    left: 0; /* تحديد الموقع */
+    width: 0%; /* عرض الخط صفر في البداية */
+    height: 2px; /* ارتفاع الخط */
+    background: #2691d9; /* لون الخط */
+    transition: .5s; /* تأثير التغير */
+}
+
+/* تأثيرات التسمية عند التركيز أو التحقق من النص */
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+    top: -5px; /* نقل التسمية لأعلى */
+    color: #2691d9; /* تغيير لون التسمية */
+}
+
+/* تأثيرات الخط تحت الحقل عند التركيز أو التحقق من النص */
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+    width: 100%; /* تكبير الخط تحت الحقل */
+}
+
+/* إعدادات كلمة المرور */
+.pass {
+    margin: 15px 0; /* إضافة مسافة حول كلمة المرور */
+    color: #a6a6a6; /* تحديد اللون */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    text-align: right; /* توسيط النص لليمين */
+    font-size: 14px; /* تحديد حجم الخط */
+}
+
+/* إعدادات زر الإدخال */
+input[type="submit"] {
+    width: 100%; /* عرض الزر 100% */
+    height: 50px; /* ارتفاع الزر */
+    border: 1px solid; /* حدود حول الزر */
+    background: #2691d9; /* خلفية زر باللون الأزرق */
+    border-radius: 25px; /* زاوية مدورة للزر */
+    font-size: 18px; /* حجم الخط داخل الزر */
+    color: #e9f4fb; /* لون النص داخل الزر */
+    font-weight: 700; /* سمك الخط */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    outline: none; /* إزالة التحديد الخارجي */
+}
+
+/* تأثيرات الزر عند التمرير عليه */
+input[type="submit"]:hover {
+    border-color: #2691d9; /* تغيير لون الحدود عند التمرير */
+    transition: .5s; /* تأثير التغير */
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- تعريف الترميز المستخدم في الصفحة -->
+    <meta charset="UTF-8">
+    <!-- تحديد طريقة عرض الصفحة على الأجهزة المختلفة -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Department</title>
+    <!-- ربط ملف الـ CSS الخاص بالاستايل -->
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!-- عنوان الصفحة الرئيسية -->
+    <h1>Add New Department</h1>
+
+    <!-- الفورم لإضافة قسم جديد -->
+    <form id="departmentForm">
+        <!-- حقل إدخال ID القسم -->
+        <label for="id">Department ID:</label>
+        <input type="number" id="id" required>
+
+        <!-- حقل إدخال اسم القسم -->
+        <label for="name">Department Name:</label>
+        <input type="text" id="name" required>
+
+        <!-- حقل إدخال وصف القسم -->
+        <label for="location">Description:</label>
+        <input type="text" id="location" required>
+
+        <!-- حقل إدخال تاريخ بدء القسم -->
+        <label for="startingDate">Starting Date:</label>
+        <input type="date" id="startingDate" required>
+
+        <!-- زرار لإرسال البيانات وإضافة القسم -->
+        <button type="submit">Add Department</button>
+
+        <!-- الجزء ده موقوف حاليًا وبيحتوي على رابط للصفحة التالية -->
+        <!-- <div class="next-btn">
+            <a href="department-prompt.html">prompt code</a>
+        </div> -->
+    </form>
+
+    <!-- ربط ملف الـ JavaScript الخاص بالإجراءات -->
+    <script src="adddepartment.js"></script>
+</body>
+
+</html>

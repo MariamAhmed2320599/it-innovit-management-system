@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login-container"> <!-- الحاوية الرئيسية للفورم والصورة -->
+        <!-- صورة على اليسار -->
+        <div class="login-image"> <!-- قسم الصورة -->
+            <img src="login.png" alt="Welcome to InnovIT"> <!-- صورة توضح رسالة ترحيبية -->
+        </div>
+
+        <!-- الفورم على اليمين -->
+        <div class="login-form"> <!-- قسم الفورم -->
+            <h1>Login</h1> <!-- عنوان الفورم -->
+            <form id="loginForm" method="post"> <!-- بداية الفورم وتهيئته للإرسال -->
+                <div class="txt_field"> <!-- حقل إدخال لـ Id -->
+                    <input type="text" id="loginId" required> <!-- حقل إدخال لرقم المستخدم -->
+                    <span></span> <!-- عنصر لتنسيق الحقل -->
+                    <label>Id</label> <!-- تسمية الحقل -->
+                </div>
+                <div class="txt_field"> <!-- حقل إدخال لـ كلمة المرور -->
+                    <input type="password" id="loginPassword" required> <!-- حقل إدخال كلمة المرور -->
+                    <span></span> <!-- عنصر لتنسيق الحقل -->
+                    <label>Password</label> <!-- تسمية الحقل -->
+                </div>
+                <input type="submit" value="Login"> <!-- زر التسجيل -->
+                <div class="pass" onclick="resetPassword()">Forgot Password?</div> <!-- رابط لاسترجاع كلمة المرور -->
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script> <!-- ربط ملف JavaScript للتحكم في العمليات -->
+</body>
+
+
+</html>

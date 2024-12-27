@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Salaried Employees</title>
+    <link rel="stylesheet" href="hours.css">
+</head>
+<body>
+    <!-- عنوان الصفحة لعرض الموظفين ذوي الرواتب الأعلى -->
+    <h1>Higher Salaried Employees</h1>
+
+    <!-- جدول لعرض بيانات الموظفين ذوي الرواتب الأعلى -->
+    <table id="employeeTable" border="1">
+        <thead>
+            <tr>
+                <!-- رؤوس الأعمدة التي تحتوي على معلومات كل موظف -->
+                <th>Name</th>
+                <th>Salary</th>
+                <th>Performance Rate</th>
+                <th>Age</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Skills</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <!-- الجسم (tbody) سيتم ملؤه بالبيانات ديناميكياً -->
+        <tbody id="x"></tbody>
+    </table>
+
+    <!-- ربط السكربت الذي سيقوم بملء الجدول بالبيانات الخاصة بالموظفين ذوي الرواتب الأعلى -->
+    <script src="higher-salaried-employees.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+/* إعدادات عامة */
+body {
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحشوات */
+    background: linear-gradient(120deg, #2980b9, #8e44ad); /* خلفية متدرجة */
+    height: 100vh; /* تحديد ارتفاع كامل الشاشة */
+    display: flex; /* استخدام فليكس لتوزيع العناصر */
+    justify-content: center; /* محاذاة العناصر أفقياً */
+    align-items: center; /* محاذاة العناصر عمودياً */
+    font-family: Arial, sans-serif; /* تحديد الخط */
+}
+
+/* تنسيق الحاوية */
+.container {
+    background-color: #fff; /* خلفية الحاوية باللون الأبيض */
+    padding: 20px; /* الحشوة داخل الحاوية */
+    border-radius: 10px; /* تدوير زوايا الحاوية */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* إضافة ظل للحاوية */
+    text-align: center; /* محاذاة النص في المنتصف */
+    max-width: 400px; /* الحد الأقصى للعرض */
+    width: 100%; /* عرض الحاوية 100% */
+}
+
+/* عنوان الصفحة */
+h1 {
+    margin-bottom: 20px; /* المسافة أسفل العنوان */
+    color: #2980b9; /* اللون الأزرق */
+    font-size: 24px; /* حجم الخط */
+}
+
+/* تنسيق النموذج */
+form {
+    display: flex; /* استخدام فليكس لتوزيع الحقول */
+    flex-direction: column; /* ترتيب الحقول عمودياً */
+    align-items: flex-start; /* محاذاة الحقول من اليسار */
+}
+
+/* تسميات الحقول */
+label {
+    margin-bottom: 5px; /* المسافة أسفل التسمية */
+    color: #333; /* اللون الرمادي الداكن للنص */
+    font-size: 14px; /* حجم الخط */
+}
+
+/* تنسيق الحقول النصية */
+input {
+    padding: 10px; /* المسافة داخل الحقل */
+    margin-bottom: 20px; /* المسافة أسفل الحقل */
+    border: 1px solid #ccc; /* إضافة حدود خفيفة حول الحقل */
+    border-radius: 5px; /* تدوير الزوايا */
+    width: 100%; /* عرض الحقل 100% */
+    font-size: 14px; /* حجم الخط */
+    box-sizing: border-box; /* حساب الحشوات والحدود ضمن الحجم الكلي */
+}
+
+/* زر الإرسال */
+button {
+    background-color: #2980b9; /* اللون الأزرق الخلفي للزر */
+    color: white; /* اللون الأبيض للنص */
+    padding: 10px; /* المسافة داخل الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير المؤشر عند المرور */
+    width: 100%; /* عرض الزر بالكامل */
+    font-size: 16px; /* حجم الخط */
+}
+
+button:hover {
+    background-color: #1b6da8; /* تغيير اللون عند التمرير */
+}

@@ -1,0 +1,163 @@
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif; /* تحديد نوع الخط */
+  margin: 0; /* إزالة المسافات الزائدة حول الجسم */
+  padding: 0; /* إزالة التباعد الداخلي */
+  background-color: #f9f9f9; /* تحديد لون خلفية الصفحة */
+  height: 100vh; /* تعيين ارتفاع الصفحة ليملأ كامل الشاشة */
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #2691d9; /* خلفية داكنة لشريط التنقل */
+  padding: 10px 0; /* إضافة تباعد داخلي أعلى وأسفل */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل لتحديد الشريط */
+}
+
+.nav-bar {
+  list-style: none; /* إزالة النقاط من العناصر */
+  margin: 0; /* إزالة المسافات حول القائمة */
+  padding: 0; /* إزالة التباعد الداخلي */
+  display: flex; /* استخدام الفليكس لصف العناصر */
+  justify-content: center; /* محاذاة العناصر في المنتصف */
+  gap: 25px; /* زيادة المسافة بين العناصر */
+}
+
+.nav-bar li {
+  position: relative; /* تحديد موضع العنصر */
+}
+
+.nav-bar a {
+  color: rgba(255, 255, 255, 0.8); /* تحديد اللون الأبيض مع الشفافية */
+  text-decoration: none; /* إزالة التسطير */
+  padding: 10px 20px; /* إضافة تباعد داخلي لتنسيق النص */
+  display: block; /* عرض الرابط ككتلة */
+  border-radius: 8px; /* إضافة زوايا مدورة */
+  transition: all 0.3s ease; /* إضافة تأثير سلس عند التفاعل */
+  letter-spacing: 1px; /* زيادة المسافة بين الحروف */
+}
+
+.nav-bar a:hover {
+  background-color: rgb(255, 255, 255); /* تغيير الخلفية إلى الأبيض عند التمرير */
+  color: #2691d9; /* تغيير اللون إلى الأزرق عند التمرير */
+  transform: scale(1.1); /* تكبير طفيف عند التمرير */
+  opacity: 1; /* جعل النص بكامل الشفافية */
+}
+
+/* Dropdown styling */
+.dropdown-content {
+  display: none; /* إخفاء القائمة المنسدلة بشكل افتراضي */
+  position: absolute; /* تحديد موضع القائمة المنسدلة */
+  background-color: #fff; /* خلفية بيضاء للقائمة */
+  min-width: 150px; /* تحديد عرض القائمة */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* إضافة ظل للقائمة */
+  z-index: 1; /* تحديد أولوية الظهور */
+  border-radius: 8px; /* إضافة زوايا مدورة */
+  overflow: hidden; /* التأكد من أن الزوايا المدورة تطبق على القائمة بالكامل */
+}
+
+.dropdown-content a {
+  color: #2691d9; /* تحديد لون النص الأزرق */
+  padding: 10px 20px; /* إضافة تباعد داخلي حول النص */
+  text-decoration: none; /* إزالة التسطير */
+  display: block; /* عرض الرابط ككتلة */
+  transition: background-color 0.2s ease; /* تأثير تغيير الخلفية عند التمرير */
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0; /* تغيير الخلفية إلى الرمادي الفاتح عند التمرير */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block; /* إظهار القائمة المنسدلة عند التمرير */
+}
+
+/* Styling for the content section */
+.content-container {
+  display: flex; /* استخدام الفليكس لترتيب العناصر */
+  flex-direction: column; /* ترتيب العناصر عمودياً */
+  align-items: center; /* محاذاة العناصر في المنتصف */
+  justify-content: center; /* محاذاة العناصر في المنتصف */
+  min-height: 100vh; /* تحديد الحد الأدنى للارتفاع ليملأ الشاشة */
+  padding: 50px; /* إضافة تباعد داخلي حول المحتوى */
+  background-color: #fff; /* خلفية بيضاء للقسم */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل ناعم للقسم */
+  margin: 0; /* إزالة المسافات حول القسم */
+  border-radius: 10px; /* إضافة زوايا مدورة للقسم */
+}
+
+.image-section img {
+  width: 300px; /* تحديد عرض الصورة */
+  height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+  border-radius: 10px; /* إضافة زوايا مدورة للصورة */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل ناعم للصورة */
+}
+
+.text-section {
+  max-width: 600px; /* تحديد أقصى عرض للقسم النصي */
+  text-align: center; /* محاذاة النص في المنتصف */
+}
+
+.text-section h1 {
+  font-size: 2em; /* زيادة حجم النص في العنوان */
+  color: #2691d9; /* تحديد اللون الأزرق للعنوان */
+  margin-bottom: 20px; /* إضافة مسافة أسفل العنوان */
+}
+
+.text-section p {
+  font-size: 1.2em; /* تحديد حجم النص */
+  color: #666; /* تحديد لون النص بالرمادي */
+  line-height: 1.6; /* زيادة المسافة بين الأسطر */
+}
+
+/* client */
+/* Styling for Client link */
+.client a.client {
+  color: rgba(255, 255, 255, 0.8); /* نفس اللون الأبيض مع الشفافية */
+  text-decoration: none; /* إزالة التسطير */
+  padding: 10px 20px; /* نفس التباعد الداخلي كبقية الروابط */
+  display: block; /* عرض الرابط ككتلة */
+  border-radius: 8px; /* زوايا مدورة للتناسق */
+  background-color: #2691d9; /* نفس اللون الأزرق لخلفية الرابط */
+  transition: all 0.3s ease; /* تأثير سلس على التفاعل */
+  letter-spacing: 1px; /* زيادة المسافة بين الحروف */
+}
+
+/* Hover effect for Client link */
+.client a.client:hover {
+  background-color: rgb(255, 255, 255); /* تغيير الخلفية إلى الأبيض عند التمرير */
+  color: #2691d9; /* تغيير اللون إلى الأزرق عند التمرير */
+  transform: scale(1.1); /* تكبير طفيف عند التمرير */
+  opacity: 1; /* جعل النص بكامل الشفافية */
+}
+
+/* Dropdown styling for Client */
+.client-info {
+  display: none; /* إخفاء القائمة المنسدلة بشكل افتراضي */
+  position: absolute; /* تحديد موضع القائمة المنسدلة */
+  background-color: #fff; /* خلفية بيضاء للقائمة */
+  min-width: 150px; /* تحديد عرض القائمة */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* إضافة ظل للقائمة */
+  z-index: 1; /* تحديد أولوية الظهور */
+  border-radius: 8px; /* إضافة زوايا مدورة */
+  overflow: hidden; /* التأكد من أن الزوايا المدورة تطبق على القائمة بالكامل */
+}
+
+/* Links inside the Client dropdown */
+.client-info a {
+  color: #2691d9; /* تحديد اللون الأزرق للنص */
+  padding: 10px 20px; /* إضافة تباعد داخلي حول النص */
+  text-decoration: none; /* إزالة التسطير */
+  display: block; /* عرض الرابط ككتلة */
+  transition: background-color 0.2s ease; /* تأثير تغيير الخلفية عند التمرير */
+}
+
+/* Hover effect for links inside Client dropdown */
+.client-info a:hover {
+  background-color: #f0f0f0; /* تغيير الخلفية إلى الرمادي الفاتح عند التمرير */
+}
+
+/* Show dropdown when hovering over Client link */
+.client:hover .client-info {
+  display: block; /* إظهار القائمة المنسدلة عند التمرير */
+}

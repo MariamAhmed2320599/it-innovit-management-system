@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <!-- عنوان الصفحة اللي بيظهر للمستخدم في الجزء العلوي من الصفحة -->
+    <h1>Add New Employee</h1>
+
+    <!-- الفورم الخاص بإضافة موظف جديد -->
+    <form id="employeeForm">
+        
+        <!-- حقل إدخال ID الموظف -->
+        <label for="id">Employee ID:</label>
+        <input type="number" id="id" required> <!-- الحقل ده لازم يكون رقمي وملزم -->
+
+        <!-- حقل إدخال اسم الموظف -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" required> <!-- بيقبل نص وملزم -->
+
+        <!-- حقل إدخال راتب الموظف -->
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" required> <!-- بيقبل أرقام وملزم -->
+
+        <!-- حقل إدخال معدل أداء الموظف -->
+        <label for="performancerate">Performance Rate:</label>
+        <input type="text" id="performancerate" required> <!-- بيقبل نص وملزم -->
+
+        <!-- حقل إدخال عمر الموظف -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" required> <!-- بيقبل أرقام وملزم -->
+
+        <!-- حقل إدخال تاريخ ميلاد الموظف -->
+        <label for="dateOfBirth">Date of Birth:</label>
+        <input type="date" id="dateOfBirth" required> <!-- بيقبل تاريخ وملزم -->
+
+        <!-- حقل إدخال نوع جنس الموظف -->
+        <label for="gender">Gender:</label>
+        <input type="text" id="gender" required> <!-- بيقبل نص وملزم -->
+
+        <!-- حقل إدخال مهارات الموظف -->
+        <label for="skills">Skills:</label>
+        <input type="text" id="skills" required> <!-- بيقبل نص وملزم -->
+
+        <!-- حقل إدخال حالة الموظف (نشط أو غير نشط) -->
+        <label for="status">Status:</label>
+        <input type="text" id="status" required> <!-- بيقبل نص وملزم -->
+
+        <!-- زرار عشان المستخدم يضيف الموظف -->
+        <button type="submit">Add Employee</button>
+    </form>
+
+    <!-- ربط ملف الـ JavaScript اللي هيتعامل مع الفورم -->
+    <script src="addemployee.js"></script>
+</body>
+
+
+</html>

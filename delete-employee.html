@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Employee</title>
+    <link rel="stylesheet" href="delete-employee.css">
+</head>
+
+<body>
+    <!-- الحاوية التي تحتوي على الفورم الخاص بحذف الموظف -->
+    <div class="container">
+        <!-- عنوان الصفحة -->
+        <h1>Delete Employee</h1>
+
+        <!-- الفورم الخاص بحذف الموظف -->
+        <form id="deleteEmployeeForm">
+            <!-- حقل لإدخال الـ ID الخاص بالموظف الذي سيتم حذفه -->
+            <label for="employee-id">Enter Employee ID to Delete:</label>
+            <!-- حقل إدخال الـ ID مع إضافة النص التوضيحي -->
+            <input type="text" id="employee-id" name="employee-id" placeholder="Enter Employee ID" required>
+            <!-- زر الحذف الخاص بالموظف -->
+            <button type="submit">Delete Employee</button>
+        </form>
+    </div>
+
+    <!-- ربط السكربت الخاص بحذف الموظف -->
+    <script src="delete-employee.js"></script>
+</body>
+
+</html>

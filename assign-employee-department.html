@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Employee to Department</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body>
+        <!-- الجزء ده بيحتوي على الفورم الخاص بتخصيص الموظف للقسم -->
+        <div class="center">
+            <!-- عنوان الصفحة -->
+            <h2>Assign Employee to Department</h2>
+    
+            <!-- الفورم اللي هيتم من خلاله تخصيص الموظف للقسم -->
+            <form id="assign-employee-form">
+                
+                <!-- حقل لاختيار الموظف -->
+                <div class="txt_field">
+                    <select id="employee-select">
+                        <!-- الخيار الأول بيقول للمستخدم اختار الموظف -->
+                        <option value="" disabled selected>Select Employee</option>
+                        <!-- هنا هيتضاف الموظفين بشكل ديناميكي من خلال الـ JavaScript -->
+                    </select>
+                </div>
+    
+                <!-- حقل لاختيار القسم -->
+                <div class="txt_field">
+                    <select id="department-select">
+                        <!-- الخيار الأول بيقول للمستخدم اختار القسم -->
+                        <option value="" disabled selected>Select Department</option>
+                        <!-- هنا هيتضاف الأقسام بشكل ديناميكي من خلال الـ JavaScript -->
+                    </select>
+                </div>
+    
+                <!-- زرار لتخصيص الموظف للقسم -->
+                <button type="button" class="assign-btn" onclick="assignEmployeeToDepartment()">Assign</button>
+            </form>
+        </div>
+
+    <script src="assign-employee-department.js"></script>
+</body>
+</html>

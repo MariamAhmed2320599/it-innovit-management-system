@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Department</title>
+    <link rel="stylesheet" href="delete-department.css">
+</head>
+
+<body>
+    <!-- الحاوية التي تحتوي على الفورم الخاص بحذف القسم -->
+    <div class="container">
+        <!-- عنوان الصفحة -->
+        <h1>Delete Department</h1>
+
+        <!-- الفورم الخاص بحذف القسم -->
+        <form id="deleteDepartmentForm">
+            <!-- حقل لإدخال الـ ID الخاص بالقسم الذي سيتم حذفه -->
+            <label for="department-id">Enter Department ID to Delete:</label>
+            <!-- حقل إدخال الـ ID مع إضافة النص التوضيحي -->
+            <input type="text" id="department-id" name="department-id" placeholder="Enter Department ID" required>
+            <!-- زر الحذف الخاص بالقسم -->
+            <button type="submit">Delete Department</button>
+        </form>
+    </div>
+
+    <!-- ربط السكربت الخاص بحذف القسم -->
+    <script src="delete-department.js"></script>
+</body>
+
+
+</html>

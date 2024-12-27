@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+/* إعدادات عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; /* تعيين الخط الأساسي للصفحة */
+}
+
+/* تنسيق صفحة الـBody */
+body {
+    background: linear-gradient(120deg, #2980b9, #8e44ad); /* خلفية متدرجة من اللون الأزرق إلى البنفسجي */
+    height: 100vh; /* ارتفاع الصفحة ليغطي كامل الشاشة */
+    display: flex;
+    align-items: center; /* محاذاة العناصر عموديًا في منتصف الصفحة */
+    justify-content: center; /* محاذاة العناصر أفقيًا في المنتصف */
+    padding: 20px;
+    color: #333; /* لون النصوص */
+}
+
+/* تنسيق الحاوية الرئيسية */
+.center {
+    width: 100%;
+    max-width: 500px; /* تحديد أقصى عرض للحاوية */
+    background: white; /* خلفية بيضاء */
+    border-radius: 10px; /* تدوير الزوايا */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف حول الحاوية */
+    padding: 20px;
+    box-sizing: border-box; /* لضمان أن الحشوة لا تؤثر على العرض */
+}
+
+/* تنسيق العنوان */
+.center h2 {
+    text-align: center; /* محاذاة العنوان في المنتصف */
+    margin-bottom: 20px; /* إضافة مسافة أسفل العنوان */
+    font-size: 24px; /* حجم الخط */
+    color: #333; /* لون النص */
+    font-weight: 600; /* جعل النص سميكًا */
+}
+
+/* تنسيق الأزرار */
+button.assign-btn {
+    padding: 12px; /* حشوة داخلية */
+    font-size: 16px; /* حجم الخط داخل الزر */
+    background-color: #2980b9; /* لون الخلفية */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير المؤشر عند المرور على الزر */
+    transition: background-color 0.3s; /* تأثير الانتقال عند التفاعل */
+    width: 100%; /* جعل الزر يمتد على كامل عرض الحاوية */
+}
+
+button.assign-btn:hover {
+    background-color: #1c6f9e; /* تغيير لون الزر عند المرور عليه */
+}
+
+button.assign-btn:active {
+    background-color: #185a80; /* تغيير اللون عند الضغط على الزر */
+}
+
+/* تنسيق صندوق عرض النتيجة */
+.salary-result-box {
+    border: 1px solid #ddd; /* إضافة حد خفيف للصندوق */
+    padding: 15px; /* حشوة داخلية للصندوق */
+    background-color: #f9f9f9; /* خلفية فاتحة للصندوق */
+    border-radius: 5px; /* تدوير الزوايا للصندوق */
+    margin-top: 20px; /* إضافة مسافة أعلى الصندوق */
+    font-size: 16px; /* حجم الخط */
+    font-weight: 500; /* جعل النص نصف سميك */
+    text-align: center; /* محاذاة النص في المنتصف */
+    color: #333; /* لون النص داخل الصندوق */
+}
+
+/* تنسيق المحتوى داخل الصندوق */
+.salary-result-box h3 {
+    margin-bottom: 10px; /* إضافة مسافة أسفل العنوان داخل الصندوق */
+    font-size: 18px; /* حجم الخط */
+    color: #2980b9; /* لون النص */
+}
+
+/* تأثير التركيز عند التفاعل مع العناصر */
+.salary-result-box p {
+    color: #555; /* لون النص داخل الفقرات */
+    font-size: 14px; /* حجم الخط داخل الفقرات */
+}
+
+/* إعدادات خاصة للأزرار في الصفحات الأخرى */
+button.assign-btn:focus {
+    outline: none; /* إزالة الخط المحيط عند التركيز */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* إضافة تأثير ظل عند التركيز على الزر */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign Employee to Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- الجزء ده بيحتوي على الفورم الخاص بتخصيص الموظف للمشروع -->
+    <div class="center">
+        <!-- عنوان الصفحة -->
+        <h2>Assign Employee to Project</h2>
+
+        <!-- الفورم اللي هيتم من خلاله تخصيص الموظف للمشروع -->
+        <form id="assign-project-form">
+            
+            <!-- حقل لاختيار الموظف -->
+            <div class="txt_field">
+                <select id="employee-select-project">
+                    <!-- الخيار الأول بيقول للمستخدم اختار الموظف -->
+                    <option value="" disabled selected>Select Employee</option>
+                    <!-- هنا هيتضاف الموظفين بشكل ديناميكي من خلال الـ JavaScript -->
+                </select>
+            </div>
+
+            <!-- حقل لاختيار المشروع -->
+            <div class="txt_field">
+                <select id="project-select">
+                    <!-- الخيار الأول بيقول للمستخدم اختار المشروع -->
+                    <option value="" disabled selected>Select Project</option>
+                    <!-- هنا هيتضاف المشاريع بشكل ديناميكي من خلال الـ JavaScript -->
+                </select>
+            </div>
+
+            <!-- زرار لتخصيص الموظف للمشروع -->
+            <button type="button" class="assign-btn" onclick="assignEmployeeToProject()">Assign</button>
+        </form>
+    </div>
+
+    <!-- ربط السكربت الخاص بإضافة الوظائف الديناميكية -->
+    <script src="assign-employee-project.js"></script>
+</body>
+
+</html>

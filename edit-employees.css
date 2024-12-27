@@ -1,0 +1,75 @@
+body {
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحشوات */
+    background: linear-gradient(120deg, #2980b9, #8e44ad); /* الخلفية المتدرجة */
+    height: 100vh; /* تحديد ارتفاع الجسم ليشمل كامل الشاشة */
+    display: flex; /* استخدام الفليكس لترتيب العناصر */
+    justify-content: center; /* محاذاة العناصر في المنتصف أفقيًا */
+    align-items: center; /* محاذاة العناصر في المنتصف عموديًا */
+    font-family: Arial, sans-serif; /* تحديد الخط */
+}
+
+.container {
+    background-color: #fff; /* اللون الخلفي للحاوية */
+    padding: 30px; /* المسافة داخل الحاوية */
+    border-radius: 10px; /* تدوير الزوايا */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* تأثير الظل حول الحاوية */
+    text-align: center; /* محاذاة النص في المنتصف */
+    max-width: 400px; /* الحد الأقصى لعرض الحاوية */
+    width: 100%; /* العرض الكامل */
+}
+
+h1 {
+    margin-bottom: 20px; /* المسافة أسفل العنوان */
+    color: #2980b9; /* اللون الأزرق */
+}
+
+form {
+    display: flex; /* استخدام الفليكس لترتيب الحقول */
+    flex-direction: column; /* ترتيب الحقول عموديًا */
+}
+
+label {
+    margin-bottom: 5px; /* المسافة أسفل التسمية */
+    color: #333; /* اللون الرمادي الداكن للنص */
+    text-align: left; /* محاذاة النص لليسار */
+}
+
+input {
+    padding: 10px; /* المسافة داخل الحقل */
+    margin-bottom: 20px; /* المسافة أسفل الحقل */
+    border: 1px solid #ccc; /* الحدود حول الحقل */
+    border-radius: 5px; /* تدوير الزوايا */
+    width: 100%; /* عرض الحقل بالكامل */
+}
+
+button {
+    background-color: #2980b9; /* اللون الخلفي للزر */
+    color: white; /* لون النص */
+    padding: 10px; /* المسافة داخل الزر */
+    border: none; /* إزالة الحدود */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير المؤشر عند المرور */
+    transition: background-color 0.3s; /* تأثير عند التمرير */
+}
+
+button:hover {
+    background-color: #1b6da8; /* تغيير اللون عند التمرير */
+}
+
+.next-btn {
+    text-align: right; /* محاذاة النص لليمين */
+    margin-top: 20px; /* المسافة أعلى الزر */
+}
+
+.next-btn a {
+    padding: 10px 20px; /* المسافة داخل الرابط */
+    background-color: #4CAF50; /* اللون الخلفي للرابط */
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة التسطير */
+    border-radius: 5px; /* تدوير الزوايا */
+}
+
+.next-btn a:hover {
+    background-color: #45a049; /* تغيير اللون عند التمرير */
+}

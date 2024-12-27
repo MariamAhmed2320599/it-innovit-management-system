@@ -1,0 +1,63 @@
+/* Body Styles */
+body {
+    margin: 0; /* إزالة الهوامش */
+    padding: 0; /* إزالة الحشوات */
+    background: linear-gradient(120deg, #2980b9, #8e44ad); /* الخلفية المتدرجة */
+    height: 100vh; /* تحديد ارتفاع الجسم */
+    display: flex; /* استخدام الفليكس لترتيب العناصر */
+    justify-content: center; /* محاذاة العناصر في المنتصف أفقيًا */
+    align-items: center; /* محاذاة العناصر في المنتصف عموديًا */
+    flex-direction: column; /* ترتيب العناصر عموديًا */
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center; /* محاذاة النص في المنتصف */
+    margin-bottom: 20px; /* مسافة أسفل العنوان */
+    color: white; /* اللون الأبيض */
+}
+
+/* Form Styles */
+form {
+    max-width: 400px; /* الحد الأقصى لعرض النموذج */
+    width: 100%; /* عرض النموذج بالكامل */
+    background-color: #fff; /* اللون الخلفي للنموذج */
+    padding: 20px; /* المسافة داخل النموذج */
+    border-radius: 5px; /* تدوير الزوايا */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* تأثير الظل حول النموذج */
+}
+
+/* Form Elements */
+label, input, button {
+    display: block; /* جعل العناصر تتراصف عموديًا */
+    width: 100%; /* عرض العناصر بالكامل */
+    margin-bottom: 10px; /* المسافة أسفل العناصر */
+}
+
+/* Button Styles */
+button {
+    background-color: #2980b9; /* اللون الخلفي للزر */
+    color: white; /* لون النص */
+    border: none; /* إزالة الحدود */
+    padding: 10px; /* المسافة داخل الزر */
+    border-radius: 5px; /* تدوير الزوايا */
+    cursor: pointer; /* تغيير المؤشر عند المرور */
+}
+
+/* Next Button Section */
+.next-btn {
+    text-align: right; /* محاذاة الزر إلى اليمين */
+    margin-top: 20px; /* مسافة أعلى الزر */
+}
+
+.next-btn a {
+    padding: 10px 20px; /* المسافة داخل الرابط */
+    background-color: #4CAF50; /* اللون الخلفي للرابط */
+    color: white; /* لون النص */
+    text-decoration: none; /* إزالة التسطير */
+    border-radius: 5px; /* تدوير الزوايا */
+}
+
+.next-btn a:hover {
+    background-color: #45a049; /* تغيير اللون عند التمرير */
+}

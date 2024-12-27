@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Project</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- عنوان الصفحة اللي بيظهر للمستخدم في الجزء العلوي من الصفحة -->
+    <h1>Add New Project</h1>
+
+    <!-- الفورم الخاص بإضافة مشروع جديد -->
+    <form id="projectForm">
+        
+        <!-- حقل إدخال ID المشروع -->
+        <label for="id">Project ID:</label>
+        <input type="number" id="id" required> <!-- الحقل ده لازم يكون رقمي وملزم -->
+
+        <!-- حقل إدخال اسم المشروع -->
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" required> <!-- بيقبل نص وملزم -->
+
+        <!-- حقل إدخال عدد ساعات المشروع -->
+        <label for="numberOfHours">Number of Hours:</label>
+        <input type="number" id="numberOfHours" required> <!-- بيقبل أرقام وملزم -->
+
+        <!-- حقل إدخال وصف المشروع (Location) -->
+        <label for="projectLocation">Project Description:</label>
+        <input type="text" id="projectLocation" required> <!-- بيقبل نص وملزم -->
+
+        <!-- زرار عشان المستخدم يضيف المشروع -->
+        <button type="submit">Add Project</button>
+
+        <!-- الجزء ده كان موقوف حاليًا لو حابب تضيف رابط لصفحة تانية بعد إرسال البيانات -->
+        <!-- <div class="next-btn">
+            <a href="project prompt.html">prompt code</a>
+        </div> -->
+    </form>
+
+    <!-- ربط ملف الـ JavaScript اللي هيتعامل مع الفورم -->
+    <script src="addproject.js"></script>
+</body>
+
+
+</html>

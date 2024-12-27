@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Project</title>
+    <link rel="stylesheet" href="delete-project.css">
+</head>
+
+<body>
+    <!-- الحاوية التي تحتوي على الفورم الخاص بحذف المشروع -->
+    <div class="container">
+        <!-- عنوان الصفحة -->
+        <h1>Delete Project</h1>
+
+        <!-- الفورم الخاص بحذف المشروع -->
+        <form id="deleteProjectForm">
+            <!-- حقل لإدخال الـ ID الخاص بالمشروع الذي سيتم حذفه -->
+            <label for="project-id">Enter Project ID to Delete:</label>
+            <!-- حقل إدخال الـ ID مع إضافة النص التوضيحي -->
+            <input type="text" id="project-id" name="project-id" placeholder="Enter Project ID" required>
+            <!-- زر الحذف الخاص بالمشروع -->
+            <button type="submit">Delete Project</button>
+        </form>
+    </div>
+
+    <!-- ربط السكربت الخاص بحذف المشروع -->
+    <script src="delete-project.js"></script>
+</body>
+
+
+</html>

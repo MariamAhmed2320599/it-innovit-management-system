@@ -1,0 +1,605 @@
+/* Reset */
+* {
+  margin: 0; /* إزالة الهوامش الافتراضية */
+  padding: 0; /* إزالة الحشوات الافتراضية */
+  box-sizing: border-box; /* عشان الأبعاد تكون مضبوطة */
+  font-family: Arial, sans-serif; /* الخط الأساسي */
+}
+
+/* Section Styles */
+section {
+  padding: 40px 20px; /* مسافات داخلية للقسم */
+  text-align: center; /* توسيط النص */
+  background: #f9f9f9; /* لون خلفية هادي */
+  margin: 10px 0; /* مسافة بين الأقسام */
+  border-radius: 10px; /* حواف دائرية */
+  box-shadow: 0 4px 8px rgba(96, 9, 196, 0.1); /* ظل خفيف */
+}
+
+/* لون العنوان الي هو اسم الشركه */
+#h1fornamecampany {
+  color: #ffffff; /* لون أبيض للنص */
+}
+
+/* Header او nav bar */
+header {
+  background-color: #0f172a; /* خلفية داكنة للـ Header */
+  padding: 10px 100px; /* حشوات داخلية */
+  display: flex; /* ترتيب العناصر أفقيًا */
+  justify-content: space-between; /* توزيع العناصر بالتساوي */
+  align-items: center; /* توسيط العناصر رأسيًا */
+  flex-wrap: wrap; /* السماح بالتفاف العناصر */
+}
+
+/* اللوجو (صورة وعنوان مع بعض) */
+header .logo {
+  display: flex; /* ترتيب أفقي */
+  align-items: center; /* توسيط رأسي */
+}
+
+/* صورة اللوجو */
+header .logo img {
+  margin-right: 15px; /* مسافة بين الصورة والعنوان */
+  width: 50px; /* حجم الصورة */
+}
+
+/* قائمة الروابط في الـ Navbar */
+nav ul {
+  list-style: none; /* إزالة النقاط من القائمة */
+  display: flex; /* ترتيب الروابط أفقيًا */
+  gap: 20px; /* مسافة بين الروابط */
+}
+
+/* تصميم روابط القائمة */
+nav ul li a {
+  color: rgb(250, 248, 248); /* لون النص */
+  text-decoration: none; /* إزالة الخط السفلي */
+  font-size: 18px; /* حجم الخط */
+  padding: 10px 15px; /* حشوات داخل الرابط */
+  border-radius: 5px; /* حواف دائرية */
+  transition: background-color 0.3s; /* تأثير عند التمرير */
+  display: flex; /* ترتيب أفقي للعناصر */
+  align-items: center; /* توسيط رأسي */
+}
+
+/* أيقونة الرابط */
+nav ul li a i {
+  margin-left: 5px; /* مسافة بين النص والأيقونة */
+}
+
+/* تأثير الـ Hover على الروابط */
+nav ul li a:hover {
+  background-color: #fafdff; /* لون خلفية مختلف */
+  color: rgb(21, 20, 20); /* لون النص عند التمرير */
+}
+
+/* Section - Home */
+.hero {
+  display: flex; /* ترتيب أفقي للمحتوى */
+  padding: 20px; /* مسافات داخلية */
+  height: 100vh; /* ارتفاع الشاشة بالكامل */
+  background: linear-gradient(135deg, #0f172a 50%, #ffffff 50%); /* تدرج لوني */
+  color: white; /* لون النص */
+}
+
+/* Container - لتقسيم السكشن أفقيًا */
+.container {
+  display: flex; /* ترتيب أفقي */
+  align-items: center; /* توسيط رأسي */
+  justify-content: space-between; /* توزيع العناصر بالتساوي */
+  width: 100%; /* عرض كامل */
+  max-width: 1200px; /* أقصى عرض */
+  padding: 20px; /* مسافات داخلية */
+}
+
+/* القسم النصي (اليسار) */
+.text-content {
+  max-width: 50%; /* أقصى عرض للنص */
+  padding-right: 20px; /* مسافة على اليمين */
+}
+
+/* عنوان النص */
+.text-content h1 {
+  font-size: 3rem; /* حجم كبير للعنوان */
+  line-height: 1.5; /* تباعد بين الأسطر */
+  font-weight: bold; /* خط سميك */
+}
+
+/* نص مميز بلون مختلف */
+.text-content .highlight {
+  color: #007bff; /* لون أزرق */
+}
+
+/* الفقرة النصية */
+.text-content p {
+  margin: 10px; /* مسافة بين الفقرات */
+  font-size: 1.2rem; /* حجم متوسط */
+  color: #cbd5e1; /* لون رمادي */
+}
+
+/* القسم الخاص بالصورة (اليمين) */
+.image-content {
+  flex: 1; /* تمدد لملء المساحة */
+  text-align: center; /* توسيط الصورة */
+}
+
+/* صورة السكشن */
+.image-content img {
+  max-width: 180%; /* حجم الصورة */
+  height: auto; /* الحفاظ على الأبعاد */
+  border-radius: 10px; /* حواف دائرية */
+  object-fit: cover; /* تغطية المساحة */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 300px;
+  padding: 20px; 
+  flex-wrap: wrap; /* للسماح بانتقال العناصر لصف جديد على الشاشات الصغيرة */
+}
+
+/* إعادة ضبط الـ Container للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* ترتيب عمودي */
+    text-align: center; /* توسيط العناصر */
+  }
+
+  .image-content img {
+    max-width: 80%; /* حجم أصغر للصورة */
+  }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.about-section {
+  padding: 60px 20px; /* تحديد المسافة من الأطراف */
+  background: #fff; /* اللون الخلفي */
+  display: flex; /* تفعيل الفليكس لتمكين ترتيب العناصر */
+  justify-content: center; /* محاذاة المحتوى في المنتصف */
+  align-items: center; /* محاذاة العناصر عموديًا */
+}
+
+.about-content {
+  display: flex; /* استخدام فليكس لترتيب العناصر */
+  align-items: center; /* محاذاة العناصر عموديًا */
+  justify-content: space-between; /* توزيع العناصر بالتساوي */
+  max-width: 1200px; /* تحديد أقصى عرض للمحتوى */
+  margin: 0 auto; /* مركزية المحتوى */
+  flex-direction: row-reverse; /* هنا بنخلي النص على اليمين والصورة على الشمال */
+}
+
+.about-text {
+  max-width: 50%; /* تحديد أقصى عرض للنص */
+}
+
+.about-text h2 {
+  font-size: 2.5rem; /* تحديد حجم خط العنوان */
+  color: #0056b3; /* تحديد اللون */
+  margin-bottom: 20px; /* مسافة أسفل العنوان */
+}
+
+.about-text p {
+  font-size: 1.1rem; /* تحديد حجم الخط */
+  color: #555; /* تحديد اللون */
+  margin-bottom: 15px; /* مسافة أسفل الفقرة */
+  line-height: 1.8; /* تحسين التباعد بين الأسطر */
+}
+
+.about-image {
+  max-width: 40%; /* تحديد أقصى عرض للصورة */
+}
+
+.about-image img {
+  width: 100%; /* جعل الصورة تأخذ العرض الكامل */
+  border-radius: 10px; /* تدوير الزوايا */
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Projects Section */
+.projects-section {
+  background: #f9f9f9; /* اللون الخلفي */
+  padding: 60px 20px; /* المسافات من الأطراف */
+  text-align: center; /* محاذاة النص في المنتصف */
+}
+
+.projects-section h2 {
+  font-size: 2.5rem; /* حجم خط العنوان */
+  color: #0056b3; /* اللون */
+  margin-bottom: 30px; /* مسافة أسفل العنوان */
+}
+
+.projects-container {
+  display: flex; /* استخدام الفليكس لعرض العناصر */
+  justify-content: center; /* محاذاة العناصر في المنتصف */
+  flex-wrap: wrap; /* السماح بتوزيع العناصر على أكثر من سطر */
+  gap: 20px; /* المسافة بين العناصر */
+}
+
+.project-card {
+  background: #fff; /* اللون الخلفي لبطاقة المشروع */
+  width: 300px; /* عرض البطاقة */
+  border-radius: 10px; /* تدوير الزوايا */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+  overflow: hidden; /* إخفاء المحتوى الزائد */
+  transition: transform 0.3s ease; /* تأثير عند التمرير */
+}
+
+.project-card img {
+  width: 100%; /* جعل الصورة تأخذ العرض الكامل */
+  height: 180px; /* تحديد ارتفاع الصورة */
+  object-fit: cover; /* ضمان تغطية الصورة للمساحة المخصصة */
+}
+
+.project-info {
+  padding: 15px; /* المسافة داخل بطاقة المشروع */
+}
+
+.project-info h3 {
+  font-size: 1.5rem; /* حجم خط العنوان الفرعي */
+  color: #333; /* اللون */
+  margin-bottom: 10px; /* مسافة أسفل العنوان */
+}
+
+.project-info p {
+  font-size: 1rem; /* حجم الخط */
+  color: #555; /* اللون */
+  line-height: 1.6; /* تحسين التباعد بين الأسطر */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* تأثير التحريك عند التمرير */
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Services Section */
+.services-section h2 {
+  font-size: 2rem; /* حجم خط العنوان */
+  margin-bottom: 20px; /* مسافة أسفل العنوان */
+  color: #0056b3; /* اللون */
+}
+
+#h2forservices {
+  font-size: 2.5rem; /* حجم خط العنوان الأكبر */
+  color: #0056b3; /* اللون */
+  margin-bottom: 40px; /* مسافة أسفل العنوان */
+}
+
+.services-container {
+  display: grid; /* استخدام الشبكة لترتيب العناصر */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* تحديد عدد الأعمدة حسب الحجم */
+  gap: 20px; /* المسافة بين العناصر */
+  justify-items: center; /* محاذاة العناصر في المنتصف */
+}
+
+/* Service Cards */
+.service-card {
+  background-color: #ffffff; /* اللون الخلفي لبطاقة الخدمة */
+  border-radius: 10px; /* تدوير الزوايا */
+  box-shadow: 0 4px 8px rgba(83, 49, 105, 0.2); /* تأثير الظل */
+  padding: 20px; /* المسافة داخل البطاقة */
+  text-align: center; /* محاذاة النص في المنتصف */
+  transition: transform 0.3s, box-shadow 0.3s; /* تأثيرات الانتقال */
+}
+
+.service-card:hover {
+  transform: translateY(-8px); /* تأثير التحريك عند التمرير */
+  box-shadow: 0 6px 12px rgba(108, 133, 216, 0.3); /* تأثير الظل عند التمرير */
+}
+
+
+/* Service Cards */
+.service-card {
+  background-color: #ffffff; /* اللون الخلفي للبطاقة */
+  border-radius: 10px; /* تدوير الزوايا */
+  box-shadow: 0 4px 8px rgba(83, 49, 105, 0.2); /* تأثير الظل */
+  padding: 20px; /* المسافة داخل البطاقة */
+  text-align: center; /* محاذاة النص في المنتصف */
+  transition: transform 0.3s, box-shadow 0.3s; /* تأثيرات الانتقال */
+}
+
+.service-card:hover {
+  transform: translateY(-8px); /* تأثير التحريك عند التمرير */
+  box-shadow: 0 6px 12px rgba(108, 133, 216, 0.3); /* تأثير الظل عند التمرير */
+}
+
+/* Service Icon */
+.service-icon {
+  font-size: 3rem; /* حجم أيقونة الخدمة */
+  color: #007bff; /* اللون */
+  margin-bottom: 10px; /* مسافة أسفل الأيقونة */
+}
+
+/* Service Title */
+.service-title {
+  font-size: 1.4rem; /* حجم خط العنوان */
+  font-weight: bold; /* جعل الخط عريض */
+  color: #333; /* اللون */
+  margin-bottom: 10px; /* مسافة أسفل العنوان */
+}
+
+/* Service Description */
+.service-description {
+  font-size: 1rem; /* حجم الخط */
+  color: #555; /* اللون */
+  margin-bottom: 15px; /* مسافة أسفل الوصف */
+}
+
+/* Apply Button */
+.apply-btn {
+  background-color: #007bff; /* اللون الخلفي للزر */
+  color: #ffffff; /* اللون */
+  padding: 10px 20px; /* المسافة داخل الزر */
+  border: none; /* إزالة الحدود */
+  border-radius: 5px; /* تدوير الزوايا */
+  cursor: pointer; /* تغيير المؤشر عند المرور */
+  transition: background-color 0.3s ease; /* تأثير الانتقال */
+}
+
+.apply-btn:hover {
+  background-color: #004bb5; /* تغيير اللون عند التمرير */
+}
+
+/* Modal */
+.options-form {
+  position: fixed; /* تحديد الموضع */
+  top: 0; left: 0; right: 0; bottom: 0; /* تغطية الشاشة بالكامل */
+  background: rgba(0, 0, 0, 0.5); /* الخلفية الداكنة */
+  display: flex; /* استخدام فليكس لترتيب المحتوى */
+  justify-content: center; /* محاذاة العناصر في المنتصف */
+  align-items: center; /* محاذاة العناصر عموديًا */
+  z-index: 999; /* تحديد الأولوية */
+}
+
+.options-form .form-content {
+  background: rgb(255, 255, 255); /* اللون الخلفي للنموذج */
+  padding: 20px; /* المسافة داخل النموذج */
+  border-radius: 10px; /* تدوير الزوايا */
+  width: 400px; /* تحديد عرض النموذج */
+  box-shadow: 0 4px 8px rgba(183, 27, 27, 0.1); /* تأثير الظل */
+}
+
+.options-form .form-header {
+  display: flex; /* استخدام فليكس لترتيب الرأس */
+  justify-content: space-between; /* توزيع العناصر بالتساوي */
+  align-items: center; /* محاذاة العناصر عموديًا */
+  margin-bottom: 20px; /* مسافة أسفل الرأس */
+}
+
+.options-form .form-header h3 {
+  font-size: 1.5rem; /* حجم خط العنوان */
+}
+
+.options-form .form-header button {
+  font-size: 1.5rem; /* حجم الخط */
+  background: transparent; /* خلفية شفافة */
+  border: none; /* إزالة الحدود */
+  cursor: pointer; /* تغيير المؤشر عند المرور */
+}
+
+.options-form form {
+  display: flex; /* استخدام فليكس لترتيب العناصر */
+  flex-direction: column; /* ترتيب العناصر عموديًا */
+}
+
+.options-form form label {
+  font-size: 1rem; /* حجم الخط */
+  margin-bottom: 5px; /* مسافة أسفل التسمية */
+}
+
+.options-form form select,
+.options-form form textarea {
+  padding: 10px; /* المسافة داخل الحقول */
+  margin-bottom: 20px; /* مسافة أسفل الحقل */
+  border: 1px solid #812f2f; /* تحديد اللون للحدود */
+  border-radius: 5px; /* تدوير الزوايا */
+}
+
+.options-form .form-buttons {
+  display: flex; /* استخدام فليكس لترتيب الأزرار */
+  justify-content: space-between; /* توزيع الأزرار بالتساوي */
+}
+
+.options-form .submit-btn,
+.options-form .cancel-btn {
+  padding: 10px 20px; /* المسافة داخل الأزرار */
+  border: none; /* إزالة الحدود */
+  border-radius: 5px; /* تدوير الزوايا */
+  cursor: pointer; /* تغيير المؤشر عند المرور */
+  transition: background-color 0.3s; /* تأثير الانتقال */
+}
+
+.options-form .submit-btn {
+  background-color: #007bff; /* اللون الخلفي للزر */
+  color: white; /* اللون */
+}
+
+.options-form .submit-btn:hover {
+  background-color: #0056b3; /* تغيير اللون عند التمرير */
+}
+
+.options-form .cancel-btn {
+  background-color: #f44336; /* اللون الخلفي للزر */
+  color: white; /* اللون */
+}
+
+.options-form .cancel-btn:hover {
+  background-color: #e53935; /* تغيير اللون عند التمرير */
+}
+
+/* Reset some styles */
+.features {
+  list-style: none; /* إزالة النقاط من القائمة */
+  padding: 0; /* إزالة الحشو */
+  margin: 20px 0; /* مسافة حول القائمة */
+}
+
+.features li {
+  display: flex; /* استخدام فليكس لترتيب العناصر */
+  align-items: center; /* محاذاة العناصر عموديًا */
+  margin-bottom: 10px; /* مسافة أسفل العنصر */
+  font-size: 1rem; /* حجم الخط */
+}
+
+.features li i {
+  margin-right: 5px; /* مسافة بين الأيقونة والنص */
+  color: #007bff; /* اللون */
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Team Section */
+/* Team Section */
+.team-section {
+  background: #ffffff; /* اللون الخلفي */
+  padding: 60px 20px; /* المسافات داخل القسم */
+  text-align: center; /* محاذاة النص في المنتصف */
+}
+
+.team-section h2 {
+  font-size: 2.5rem; /* حجم خط العنوان */
+  color: #0056b3; /* اللون */
+  margin-bottom: 40px; /* مسافة أسفل العنوان */
+}
+
+.team-container {
+  display: flex; /* استخدام فليكس لترتيب العناصر */
+  justify-content: center; /* محاذاة العناصر في المنتصف */
+  flex-wrap: wrap; /* السماح بلف العناصر إلى أسطر جديدة */
+  gap: 20px; /* المسافة بين العناصر */
+}
+
+.team-card {
+  background: #f9f9f9; /* اللون الخلفي لبطاقة الفريق */
+  width: 250px; /* عرض البطاقة */
+  border-radius: 10px; /* تدوير الزوايا */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* تأثير الظل */
+  text-align: center; /* محاذاة النص في المنتصف */
+  padding: 20px; /* المسافة داخل البطاقة */
+  transition: transform 0.3s ease; /* تأثيرات الانتقال */
+}
+
+.team-card img {
+  width: 100px; /* عرض الصورة */
+  height: 100px; /* ارتفاع الصورة */
+  border-radius: 50%; /* جعل الصورة دائرية */
+  object-fit: cover; /* ملائمة الصورة للمساحة */
+  margin-bottom: 15px; /* مسافة أسفل الصورة */
+}
+
+.team-card h3 {
+  font-size: 1.25rem; /* حجم خط الاسم */
+  color: #333; /* اللون */
+  margin-bottom: 5px; /* مسافة أسفل الاسم */
+}
+
+.team-card p {
+  font-size: 1rem; /* حجم الخط */
+  color: #777; /* اللون */
+}
+
+.team-card:hover {
+  transform: translateY(-10px); /* تأثير التحريك عند التمرير */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* تأثير الظل عند التمرير */
+}
+
+/* Contact Us Section */
+.contact-section {
+  background: #f9f9f9; /* اللون الخلفي */
+  padding: 40px 20px; /* المسافات داخل القسم */
+  text-align: center; /* محاذاة النص في المنتصف */
+}
+
+.contact-section h2 {
+  font-size: 2rem; /* حجم خط العنوان */
+  color: #0056b3; /* اللون */
+  margin-bottom: 20px; /* مسافة أسفل العنوان */
+}
+
+.contact-section p {
+  font-size: 1rem; /* حجم الخط */
+  color: #555; /* اللون */
+  margin-bottom: 20px; /* مسافة أسفل الوصف */
+}
+
+.contact-details {
+  display: flex; /* استخدام فليكس لترتيب العناصر */
+  flex-direction: column; /* ترتيب العناصر عموديًا */
+  gap: 15px; /* المسافة بين العناصر */
+  align-items: center; /* محاذاة العناصر في المنتصف */
+}
+
+.contact-item {
+  font-size: 1.2rem; /* حجم الخط */
+  color: #333; /* اللون */
+}
+
+.contact-item i {
+  color: #0056b3; /* لون الأيقونة */
+  margin-right: 10px; /* مسافة بين الأيقونة والنص */
+}
+
+html {
+  scroll-behavior: smooth; /* تأثير التمرير السلس */
+}
+
+/* Form Button Styling */
+.form-toggle {
+  text-align: center; /* محاذاة النص في المنتصف */
+  margin-top: 20px; /* مسافة أعلى الزر */
+}
+
+.form-toggle button {
+  background-color: #007bff; /* اللون الخلفي للزر */
+  color: white; /* اللون */
+  border: none; /* إزالة الحدود */
+  padding: 10px 20px; /* المسافة داخل الزر */
+  border-radius: 5px; /* تدوير الزوايا */
+  cursor: pointer; /* تغيير المؤشر عند المرور */
+  font-size: 1rem; /* حجم الخط */
+}
+
+.form-toggle button:hover {
+  background-color: #0056b3; /* تغيير اللون عند التمرير */
+}
+
+
+/* Form Container */
+.form-container {
+  margin: 20px auto; /* المسافة حول النموذج */
+  padding: 20px; /* المسافة داخل النموذج */
+  width: 80%; /* عرض النموذج */
+  max-width: 400px; /* الحد الأقصى لعرض النموذج */
+  background-color: #fff; /* اللون الخلفي */
+  border: 1px solid #ddd; /* الحدود حول النموذج */
+  border-radius: 10px; /* تدوير الزوايا */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* تأثير الظل حول النموذج */
+}
+
+/* Form Inputs, Textarea, and Button */
+.form-container input, 
+.form-container textarea, 
+.form-container button {
+  display: block; /* جعل العناصر تتراصف عموديًا */
+  width: 100%; /* عرض كامل */
+  margin-bottom: 15px; /* المسافة أسفل العناصر */
+  padding: 10px; /* المسافة داخل العناصر */
+  border: 1px solid #ccc; /* الحدود */
+  border-radius: 5px; /* تدوير الزوايا */
+}
+
+/* Form Button */
+.form-container button {
+  background-color: #0056b3; /* اللون الخلفي للزر */
+  color: white; /* لون النص */
+  border: none; /* إزالة الحدود */
+  cursor: pointer; /* تغيير المؤشر عند المرور */
+}
+
+.form-container button:hover {
+  background-color: #0056b3; /* اللون عند التمرير */
+}

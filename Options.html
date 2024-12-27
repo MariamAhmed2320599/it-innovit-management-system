@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Management Dashboard</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <nav>
+    <ul class="nav-bar"> <!-- هنا بنعرض القائمة الرئيسية للتنقل بين الأقسام -->
+      
+      <!-- قسم الموظفين -->
+      <li class="dropdown"> 
+        <a href="#" class="dropbtn">Employees</a> <!-- الرابط الرئيسي للقسم -->
+        <div class="dropdown-content"> <!-- القائمة المنسدلة الخاصة بقسم الموظفين -->
+          <a href="Add New Employee.html">Add</a> <!-- إضافة موظف جديد -->
+          <a href="edit-employee.html">Edit</a> <!-- تعديل موظف -->
+          <a href="delete-employee.html">Delete</a> <!-- حذف موظف -->
+          <a href="employees.html">Information</a> <!-- عرض بيانات الموظفين -->
+        </div>
+      </li>
+      
+      <!-- قسم المشاريع -->
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Projects</a> <!-- الرابط الرئيسي للمشاريع -->
+        <div class="dropdown-content"> <!-- القائمة المنسدلة الخاصة بالمشاريع -->
+          <a href="Add Project.html">Add</a> <!-- إضافة مشروع جديد -->
+          <a href="edit-project.html">Edit</a> <!-- تعديل مشروع -->
+          <a href="delete-project.html">Delete</a> <!-- حذف مشروع -->
+          <a href="projects.html">Information</a> <!-- عرض معلومات المشاريع -->
+        </div>
+      </li>
+  
+      <!-- قسم الأقسام -->
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Departments</a> <!-- الرابط الرئيسي للأقسام -->
+        <div class="dropdown-content"> <!-- القائمة المنسدلة الخاصة بالأقسام -->
+          <a href="Add Department.html">Add</a> <!-- إضافة قسم جديد -->
+          <a href="edit-department.html">Edit</a> <!-- تعديل قسم -->
+          <a href="delete-department.html">Delete</a> <!-- حذف قسم -->
+          <a href="departments.html">Information</a> <!-- عرض معلومات الأقسام -->
+        </div>
+      </li>
+  
+      <!-- إدارة الموظفين -->
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Employees Management</a> <!-- الرابط الرئيسي لإدارة الموظفين -->
+        <div class="dropdown-content"> <!-- القائمة المنسدلة لإدارة الموظفين -->
+          <a href="employee-with-coding-skills.html">Employee with Coding Skills</a> <!-- الموظفين اللي عندهم مهارات برمجة -->
+          <a href="higher-salaried-employees.html">Hire Salary Employee</a> <!-- الموظفين ذوي الرواتب الأعلى -->
+          <a href="inactive-employees.html">Unactive Employee</a> <!-- الموظفين الغير نشطين -->
+          <a href="best-employees.html">Best Employee</a> <!-- أفضل الموظفين -->
+          <a href="male-employees.html">Male Employee</a> <!-- الموظفين الذكور -->
+          <a href="assign-employee-department.html">assign-employee-department</a> <!-- تعيين الموظف للقسم -->
+          <a href="assign-employee-project.html">assign-employee-project</a> <!-- تعيين الموظف للمشروع -->
+          <a href="Department Total Salary.html">Department Total Salary</a> <!-- إجمالي رواتب القسم -->
+        </div>
+      </li>
+      
+      <!-- قسم العملاء -->
+      <li class="client">
+        <a href="#" class="client">client</a> <!-- الرابط الرئيسي للعملاء -->
+        <div class="client-info">
+          <a href="info-client.html">customer info</a> <!-- معلومات العملاء -->
+        </div>
+      </li>
+
+      <!-- قسم الإدارة الخاصة بالمشاريع والأقسام (تم التعليق عليه حالياً) -->
+      <!-- <li class="dropdown">
+        <a href="#" class="dropbtn">Projects & Departments</a> 
+        <div class="dropdown-content">
+          <a href="department-totally.html">Department Total Salary</a>
+          <a href="least-hours-project.html">Project with Last Hours</a>
+        </div>
+      </li> -->
+    </ul>
+  </nav>
+
+  <!-- محتوى الصفحة الرئيسية -->
+  <div class="content-container">
+    <div class="image-section">
+      <img src="img111.png" alt="Dashboard Image"> <!-- صورة لواجهة النظام -->
+    </div>
+    <div class="text-section">
+      <h1>Welcome to the Management Dashboard</h1> <!-- عنوان الصفحة -->
+      <p>This system helps you manage employees, projects, and departments efficiently. Use the navigation bar above to access the various features and tools available.</p> <!-- وصف الصفحة -->
+    </div>
+  </div>
+</body>
+
+</html>
